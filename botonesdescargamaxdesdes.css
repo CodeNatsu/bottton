@@ -1,0 +1,182 @@
+
+.dlbutton{
+    text-align:left;
+    width:100%;
+  
+    max-width:250px;
+    padding:18px 20px;
+    background:#5381bf;
+    border-radius:3px;
+    position:relative;
+    display:block;
+    color:#FFF;
+    text-decoration:none;
+    cursor:pointer;
+    text-shadow:0 1px 1px rgba(0,0,0,0.5);
+    margin:25px auto 5px;
+    
+  }
+  .dlbutton:hover{
+    background:#3a6eb2
+  }
+  .dlbutton.mega{
+    background:#DA262E
+  }
+  .dlbutton.mega:hover{
+    background:#DA222A
+  }
+  .dlbutton.fichier{
+    background:#FF7D00
+  }
+  .dlbutton.fichier:hover{
+    background:#EE6900
+  }
+  .dlbutton.gdrive{
+    background:#F2F2F4;
+    color:#717171;
+    text-shadow:none
+  }
+  .dlbutton.gdrive .details {
+    color:#FAFAFA
+  }
+  .dlbutton.gdrive:hover{
+    background:#e0e0e2
+  }
+  .dlbutton.uptobox{
+    background:#2d2d2d
+  }
+  .dlbutton.uptobox:hover{
+    background:#1C1C1C
+  }
+  .dlbutton.megaup{
+    background:#F80803
+  }
+  .dlbutton.megaup:hover{
+    background:#dd100d
+  }
+  .dlbutton.userscloud{
+    background:#D02D28
+  }
+  .dlbutton.userscloud:hover{
+    background:#c42d2b
+  }
+  .dlbutton.onedrive{
+    background:#27A3E3
+  }
+  .dlbutton.onedrive:hover{
+    background:#0074CD
+  }
+  .dlbutton.otro{
+    background:#4ad295
+  }
+  .dlbutton.otro:hover{
+    background:#2BC48A
+  }
+  .dlbutton.vip{
+    color: #252B37;
+    background-color: #151823;
+    animation: textColor 10s ease infinite;
+    position:relative;
+    border:1px solid #3a362a;
+  }
+  .dlbutton.vip .details{
+    opacity:.9
+  }
+  .dlbutton.vip:after{
+    position: absolute;
+    content: "";
+    top: 1vw;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    transform: scale(0.65);
+    -webkit-filter: blur(5vw);
+    -moz-filter: blur(5vw);
+    -ms-filter: blur(5vw);
+    filter: blur(5vw);
+    background: linear-gradient(to right, #f7ff00, #db36a4);
+    background-size: 200% 200%;
+    animation: animateGlow 10s ease infinite;  
+  }
+  .dlbutton.vip:hover{
+    background:#1c1f2b
+  }
+  
+  .dlbutton small{
+    width:100%;
+    display:inline-block;
+    font-size:12px;
+  }
+  .dlbutton .details{
+    position:absolute;
+    top:7px;
+    right:15px;
+    font-size:13px;
+    background:rgba(0,0,0,0.2);
+    padding:6px 8px;
+    border-radius:2px;
+    text-align:center;
+    opacity:.6;
+    transition: right 0.4s linear, opacity 0.25s;
+    max-width:75px;
+  }
+  .dlbutton:hover .details{
+    opacity:1;
+  }
+  .dlbutton .details img{
+    width:28px;
+    margin:0 auto;
+    text-align:center;
+  }
+  .dlbutton .details .size{
+    font-size:12px;
+    display:block;
+    margin-top:5px;
+    vertical-align:middle;
+    height:15px
+  }
+  
+  @keyframes animateGlow {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  @keyframes textColor {
+    0% {
+      color: #f7dd8f;
+    }
+    50% {
+      color: #E78054;
+    }
+    100% {
+      color: #f7dd8f;
+    }
+  }
+    .dlwrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  
+  
+  
+    @media screen and (max-width: 768px) {
+      .dlwrapper {
+        flex-direction: column;
+        align-items: center;
+      }
+  
+      .dlbutton {
+        max-width: 100%; /* Botones ocupan el ancho completo */
+        margin: 5px 0; /* Espacio entre botones */
+      }
+    }
